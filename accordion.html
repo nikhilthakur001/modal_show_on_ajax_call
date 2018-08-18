@@ -1,0 +1,92 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+  <style>
+
+.panel-heading-one .accordion-toggle:after{
+    font-family: 'Glyphicons Halflings';
+    content: "\e114"; 
+    float: right;        
+    color: #ffffff;         
+    height: 24px;
+    width: 40px;
+    background-color: #000000;
+}
+
+      .panel-heading-one .accordion-toggle[aria-expanded="false"]:after {
+    /* symbol for "opening" panels */
+    content: "\e114";
+}
+
+.panel-heading-one .accordion-toggle[aria-expanded="true"]:after {
+    /* symbol for "collapsed" panels */
+    content: "\e113";
+}
+  </style>
+
+</head>
+<body>
+
+        <div class="panel-group">
+                <div class="panel-heading-one panel-main-heading-one">
+                   <h4 class="panel-title panel-main-title">
+                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                         <img src="../images/image.svg" class="panel-icon">
+                         <p>Title here</p>
+                      </a>
+                   </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                   <div class="panel-body panel-bodymain-one">
+                      <p>Text body here 1</p>
+                   </div>
+                </div>
+                      <div class="panel-heading-one panel-main-heading-one">
+                   <h4 class="panel-title panel-main-title">
+                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                         <img src="../images/image.svg" class="panel-icon">
+                         <p>Title here</p>
+                      </a>
+                   </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                   <div class="panel-body panel-bodymain-one">
+                      <p>Title body here 2</p>
+                   </div>
+                </div>
+                      <div class="panel-heading-one panel-main-heading-one">
+                   <h4 class="panel-title panel-main-title">
+                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                         <img src="../images/image.svg" class="panel-icon">
+                         <p>Title here</p>
+                      </a>
+                   </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse">
+                   <div class="panel-body panel-bodymain-one">
+                      <p>Text body here 3</p>
+                   </div>
+                </div>
+             </div>
+          </div>
+
+          <script>
+              var obj= {};
+
+              if(obj.bro) {
+                  console.log("true")
+              } else {
+                  console.log("false")
+              }
+          </script>
+
+</body>
+</html>
